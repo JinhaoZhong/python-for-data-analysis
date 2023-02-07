@@ -40,6 +40,8 @@ with open("C:/Users/ZJH_8/Desktop/tmp.txt","w") as f4:
 
 
 print("##################### use panda to read multiple files types ########################")
+
+##  data frame count start as [0,0]
 import pip
 pip.main(["install", "openpyxl"])
 import pandas as pd
@@ -48,12 +50,17 @@ df = pd.read_excel(xlsx_path)
 df.head
 print(df)
 print(df["Dealer ID"].unique())
-print("######################list num row and num col")
+print("######################list num row and num col#################################")
+
+## looks like num of col = num of []
 date = df[["Year", "Month"]]
 print(date)
+
+##  print specific col
 year=df["Year"]
 print(year)
 
+## first row first col
 df.ix[0,0]
 
 
