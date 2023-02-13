@@ -10,10 +10,10 @@ print("type:", type(file))
 ## open as data frame
 import panda as pd
 path="C:/Users/ZJH_8/Desktop/tmp.csv"
-df.to_csv(path)  #pd.read_csv  read csv file
-# df.to_json(path) pd.read_json  read json file
-# df.to_excel(path) pd.read_excel  read excel file
-# df.to_sql(path) pd.read_sql  read sql file
+df=pd.to_csv(path)  #pd.read_csv  read csv file
+# pd.to_json(path) pd.read_json  read json file
+# pd.to_excel(path) pd.read_excel  read excel file
+# pd.to_sql(path) pd.read_sql  read sql file
 
 print("#########################seperate#########################")
 ## read lines, print out as list
